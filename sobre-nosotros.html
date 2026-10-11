@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nosotros — Café Aroma</title>
+  <meta name="description" content="Conoce la historia, misión y equipo detrás de Café Aroma.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar fixed top-0 left-0 right-0 z-50 px-6 lg:px-12 py-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2">
+      <svg class="w-9 h-9 text-coffee" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+        <line x1="6" y1="1" x2="6" y2="4"></line>
+        <line x1="10" y1="1" x2="10" y2="4"></line>
+        <line x1="14" y1="1" x2="14" y2="4"></line>
+      </svg>
+      <span class="text-2xl font-bold tracking-tight" style="font-family: 'Playfair Display', serif;">Café Aroma</span>
+    </a>
+
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="index.html" class="nav-link font-medium">Inicio</a>
+      <a href="sobre-nosotros.html" class="nav-link font-medium active">Sobre Nosotros</a>
+      <a href="servicios.html" class="nav-link font-medium">Servicios</a>
+      <a href="galeria.html" class="nav-link font-medium">Galería</a>
+      <a href="precios.html" class="nav-link font-medium">Precios</a>
+      <a href="contacto.html" class="nav-link font-medium">Contacto</a>
+    </div>
+
+    <button class="mobile-toggle lg:hidden text-coffee" aria-label="Abrir menú">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+  </nav>
+
+  <div class="mobile-menu-overlay"></div>
+  <aside class="mobile-menu">
+    <button class="close-menu absolute top-6 right-6 text-coffee">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <a href="index.html">Inicio</a>
+    <a href="sobre-nosotros.html">Sobre Nosotros</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="galeria.html">Galería</a>
+    <a href="precios.html">Precios</a>
+    <a href="contacto.html">Contacto</a>
+  </aside>
+
+  <!-- HERO -->
+  <header class="relative pt-32 pb-20 px-6 lg:px-12 bg-cream">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <p class="uppercase tracking-[0.2em] text-sm text-coffee mb-3 font-semibold">Sobre Nosotros</p>
+        <h1 class="text-5xl md:text-6xl font-bold mb-6" style="font-family: 'Playfair Display', serif;">
+          Una historia de pasión por el café
+        </h1>
+        <p class="text-gray-700 leading-relaxed text-lg">
+          Desde hace casi una década, en Café Aroma creemos que cada taza es una oportunidad para crear momentos memorables.
+        </p>
+      </div>
+      <div class="reveal">
+        <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=900&q=80"
+             alt="Equipo trabajando" class="rounded-2xl shadow-2xl w-full h-[400px] object-cover"
+             onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1511920170033-f8396924c348?w=900&q=80';">
+      </div>
+    </div>
+  </header>
+
+  <!-- HISTORIA DETALLADA -->
+  <section class="py-20 px-6 lg:px-12">
+    <div class="max-w-4xl mx-auto reveal">
+      <h2 class="text-4xl font-bold mb-6" style="font-family: 'Playfair Display', serif;">Nuestra Historia</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Café Aroma nació en 2015 del sueño compartido de tres amigos amantes del café. Después de años viajando por los principales países productores — Colombia, Etiopía, Kenia, Brasil — decidimos crear un espacio donde el café de especialidad fuera accesible para todos.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Lo que comenzó como un pequeño local con apenas 4 mesas, hoy se ha convertido en un referente de la ciudad. Nuestro compromiso con la calidad nos ha llevado a establecer relaciones directas con productores, garantizando trazabilidad y comercio justo.
+      </p>
+      <p class="text-gray-700 leading-relaxed">
+        Cada taza que servimos es resultado de un proceso cuidadoso: selección de granos, tostado artesanal, y preparación por baristas certificados. Creemos que el café es más que una bebida: es una cultura, una conexión y un arte.
+      </p>
+    </div>
+  </section>
+
+  <!-- MISION VISION VALORES -->
+  <section class="py-20 px-6 lg:px-12 bg-coffee text-white">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+      <div class="reveal reveal-delay-1 bg-white/10 backdrop-blur p-8 rounded-2xl">
+        <svg class="w-12 h-12 mb-4 text-yellow-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <circle cx="12" cy="12" r="6"></circle>
+          <circle cx="12" cy="12" r="2"></circle>
+        </svg>
+        <h3 class="text-2xl font-bold mb-3" style="font-family: 'Playfair Display', serif;">Misión</h3>
+        <p class="text-gray-200 leading-relaxed">
+          Ofrecer experiencias memorables alrededor del café de especialidad, conectando a las personas con los mejores granos del mundo a través de un servicio excepcional.
+        </p>
+      </div>
+
+      <div class="reveal reveal-delay-2 bg-white/10 backdrop-blur p-8 rounded-2xl">
+        <svg class="w-12 h-12 mb-4 text-yellow-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+          <circle cx="12" cy="12" r="3"></circle>
+        </svg>
+        <h3 class="text-2xl font-bold mb-3" style="font-family: 'Playfair Display', serif;">Visión</h3>
+        <p class="text-gray-200 leading-relaxed">
+          Ser reconocidos como la cafetería de referencia en la región, destacados por nuestra calidad, sostenibilidad y contribución a la cultura del café.
+        </p>
+      </div>
+
+      <div class="reveal reveal-delay-3 bg-white/10 backdrop-blur p-8 rounded-2xl">
+        <svg class="w-12 h-12 mb-4 text-yellow-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+        <h3 class="text-2xl font-bold mb-3" style="font-family: 'Playfair Display', serif;">Valores</h3>
+        <p class="text-gray-200 leading-relaxed">
+          Calidad, sostenibilidad, comunidad, innovación y respeto. Estos principios guían cada decisión que tomamos y cada taza que servimos.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPO -->
+  <section class="py-20 px-6 lg:px-12 bg-cream">
+    <div class="max-w-7xl mx-auto">
+      <div class="section-title reveal">
+        <div class="divider"></div>
+        <h2>Nuestro Equipo</h2>
+        <p>Profesionales apasionados que hacen posible cada experiencia en Café Aroma.</p>
+      </div>
+
+      <div id="equipo-container" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12"></div>
+    </div>
+  </section>
+
+  <!-- ESTADÍSTICAS -->
+  <section class="py-20 px-6 lg:px-12">
+    <div class="max-w-6xl mx-auto">
+      <div id="stats-container" class="grid grid-cols-2 md:grid-cols-4 gap-8"></div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="py-20 px-6 lg:px-12 bg-cream">
+    <div class="max-w-4xl mx-auto">
+      <div class="section-title reveal">
+        <div class="divider"></div>
+        <h2>Nuestra Trayectoria</h2>
+        <p>Los momentos clave que han marcado nuestra historia.</p>
+      </div>
+
+      <div id="hitos-container" class="mt-12 ml-4"></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-6 lg:px-12 bg-coffee text-white text-center">
+    <div class="max-w-3xl mx-auto reveal">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6" style="font-family: 'Playfair Display', serif;">
+        ¿Quieres conocernos en persona?
+      </h2>
+      <p class="text-gray-200 mb-8 text-lg">
+        Te invitamos a visitarnos y descubrir por ti mismo la experiencia Café Aroma.
+      </p>
+      <a href="contacto.html" class="btn-secondary">Ver Ubicación</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white py-16 px-6 lg:px-12">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+          </svg>
+          <span class="text-2xl font-bold" style="font-family: 'Playfair Display', serif;">Café Aroma</span>
+        </div>
+        <p class="text-gray-400 text-sm leading-relaxed">Café de especialidad, pastelería artesanal y momentos inolvidables desde 2015.</p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 uppercase tracking-wider text-sm">Navegación</h4>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li><a href="index.html" class="hover:text-white transition">Inicio</a></li>
+          <li><a href="sobre-nosotros.html" class="hover:text-white transition">Sobre Nosotros</a></li>
+          <li><a href="servicios.html" class="hover:text-white transition">Servicios</a></li>
+          <li><a href="galeria.html" class="hover:text-white transition">Galería</a></li>
+          <li><a href="precios.html" class="hover:text-white transition">Precios</a></li>
+          <li><a href="contacto.html" class="hover:text-white transition">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 uppercase tracking-wider text-sm">Horarios</h4>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li>Lunes - Viernes: 7:00 - 21:00</li>
+          <li>Sábados: 8:00 - 22:00</li>
+          <li>Domingos: 9:00 - 20:00</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 uppercase tracking-wider text-sm">Contacto</h4>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li>Av. Principal 123, Ciudad</li>
+          <li>+1 (555) 123-4567</li>
+          <li>info@cafearoma.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between gap-4 text-sm text-gray-400">
+      <p>&copy; <span class="current-year"></span> Café Aroma. Todos los derechos reservados.</p>
+      <div class="flex gap-6">
+        <a href="privacidad.html" class="hover:text-white transition">Privacidad</a>
+        <a href="terminos.html" class="hover:text-white transition">Términos</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

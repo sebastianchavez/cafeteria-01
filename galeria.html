@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería — Café Aroma</title>
+  <meta name="description" content="Descubre nuestro ambiente, productos y momentos especiales en Café Aroma.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar fixed top-0 left-0 right-0 z-50 px-6 lg:px-12 py-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2">
+      <svg class="w-9 h-9 text-coffee" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+        <line x1="6" y1="1" x2="6" y2="4"></line>
+        <line x1="10" y1="1" x2="10" y2="4"></line>
+        <line x1="14" y1="1" x2="14" y2="4"></line>
+      </svg>
+      <span class="text-2xl font-bold tracking-tight" style="font-family: 'Playfair Display', serif;">Café Aroma</span>
+    </a>
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="index.html" class="nav-link font-medium">Inicio</a>
+      <a href="sobre-nosotros.html" class="nav-link font-medium">Sobre Nosotros</a>
+      <a href="servicios.html" class="nav-link font-medium">Servicios</a>
+      <a href="galeria.html" class="nav-link font-medium active">Galería</a>
+      <a href="precios.html" class="nav-link font-medium">Precios</a>
+      <a href="contacto.html" class="nav-link font-medium">Contacto</a>
+    </div>
+    <button class="mobile-toggle lg:hidden text-coffee">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+  </nav>
+
+  <div class="mobile-menu-overlay"></div>
+  <aside class="mobile-menu">
+    <button class="close-menu absolute top-6 right-6 text-coffee">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <a href="index.html">Inicio</a>
+    <a href="sobre-nosotros.html">Sobre Nosotros</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="galeria.html">Galería</a>
+    <a href="precios.html">Precios</a>
+    <a href="contacto.html">Contacto</a>
+  </aside>
+
+  <!-- HERO -->
+  <header class="relative pt-32 pb-12 px-6 lg:px-12 bg-cream">
+    <div class="max-w-4xl mx-auto text-center reveal">
+      <p class="uppercase tracking-[0.2em] text-sm text-coffee mb-3 font-semibold">Galería</p>
+      <h1 class="text-5xl md:text-6xl font-bold mb-6" style="font-family: 'Playfair Display', serif;">
+        Momentos que inspiran
+      </h1>
+      <p class="text-gray-700 leading-relaxed text-lg">
+        Explora nuestro espacio, nuestros productos y los momentos que hacen única a Café Aroma.
+      </p>
+    </div>
+  </header>
+
+  <!-- FILTROS -->
+  <section class="py-10 px-6 lg:px-12">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-wrap justify-center gap-3 mb-10 reveal">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="interior">Interior</button>
+        <button class="filter-btn" data-filter="bebidas">Bebidas</button>
+        <button class="filter-btn" data-filter="comida">Comida</button>
+        <button class="filter-btn" data-filter="postres">Postres</button>
+        <button class="filter-btn" data-filter="eventos">Eventos</button>
+      </div>
+
+      <div id="galeria-container" class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"></div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+    <div id="lightbox-caption" class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white text-center text-lg"></div>
+  </div>
+
+  <!-- TOAST -->
+  <div id="toast" class="toast">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+    <span class="toast-message"></span>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white py-16 px-6 lg:px-12 mt-12">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+          </svg>
+          <span class="text-2xl font-bold" style="font-family: 'Playfair Display', serif;">Café Aroma</span>
+        </div>
+        <p class="text-gray-400 text-sm leading-relaxed">Café de especialidad, pastelería artesanal y momentos inolvidables desde 2015.</p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 uppercase tracking-wider text-sm">Navegación</h4>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li><a href="index.html" class="hover:text-white transition">Inicio</a></li>
+          <li><a href="sobre-nosotros.html" class="hover:text-white transition">Sobre Nosotros</a></li>
+          <li><a href="servicios.html" class="hover:text-white transition">Servicios</a></li>
+          <li><a href="galeria.html" class="hover:text-white transition">Galería</a></li>
+          <li><a href="precios.html" class="hover:text-white transition">Precios</a></li>
+          <li><a href="contacto.html" class="hover:text-white transition">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 uppercase tracking-wider text-sm">Horarios</h4>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li>Lunes - Viernes: 7:00 - 21:00</li>
+          <li>Sábados: 8:00 - 22:00</li>
+          <li>Domingos: 9:00 - 20:00</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 uppercase tracking-wider text-sm">Contacto</h4>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li>Av. Principal 123, Ciudad</li>
+          <li>+1 (555) 123-4567</li>
+          <li>info@cafearoma.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between gap-4 text-sm text-gray-400">
+      <p>&copy; <span class="current-year"></span> Café Aroma. Todos los derechos reservados.</p>
+      <div class="flex gap-6">
+        <a href="privacidad.html" class="hover:text-white transition">Privacidad</a>
+        <a href="terminos.html" class="hover:text-white transition">Términos</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

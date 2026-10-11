@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestros Servicios — Café Aroma</title>
+  <meta name="description" content="Catering, clases de barismo, suscripciones y más servicios de Café Aroma.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar fixed top-0 left-0 right-0 z-50 px-6 lg:px-12 py-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2">
+      <svg class="w-9 h-9 text-coffee" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+        <line x1="6" y1="1" x2="6" y2="4"></line>
+        <line x1="10" y1="1" x2="10" y2="4"></line>
+        <line x1="14" y1="1" x2="14" y2="4"></line>
+      </svg>
+      <span class="text-2xl font-bold tracking-tight" style="font-family: 'Playfair Display', serif;">Café Aroma</span>
+    </a>
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="index.html" class="nav-link font-medium">Inicio</a>
+      <a href="sobre-nosotros.html" class="nav-link font-medium">Sobre Nosotros</a>
+      <a href="servicios.html" class="nav-link font-medium active">Servicios</a>
+      <a href="galeria.html" class="nav-link font-medium">Galería</a>
+      <a href="precios.html" class="nav-link font-medium">Precios</a>
+      <a href="contacto.html" class="nav-link font-medium">Contacto</a>
+    </div>
+    <button class="mobile-toggle lg:hidden text-coffee">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+  </nav>
+
+  <div class="mobile-menu-overlay"></div>
+  <aside class="mobile-menu">
+    <button class="close-menu absolute top-6 right-6 text-coffee">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <a href="index.html">Inicio</a>
+    <a href="sobre-nosotros.html">Sobre Nosotros</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="galeria.html">Galería</a>
+    <a href="precios.html">Precios</a>
+    <a href="contacto.html">Contacto</a>
+  </aside>
+
+  <!-- HERO -->
+  <header class="relative pt-32 pb-16 px-6 lg:px-12 bg-cream">
+    <div class="max-w-4xl mx-auto text-center reveal">
+      <p class="uppercase tracking-[0.2em] text-sm text-coffee mb-3 font-semibold">Nuestros Servicios</p>
+      <h1 class="text-5xl md:text-6xl font-bold mb-6" style="font-family: 'Playfair Display', serif;">
+        Más que una cafetería
+      </h1>
+      <p class="text-gray-700 leading-relaxed text-lg">
+        Descubre todo lo que Café Aroma puede ofrecerte. Desde catering para tus eventos hasta clases de barismo para que disfrutes el arte del café en casa.
+      </p>
+    </div>
+  </header>
+
+  <!-- SERVICIOS -->
+  <section class="py-20 px-6 lg:px-12">
+    <div class="max-w-7xl mx-auto">
+      <div id="servicios-container" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="py-20 px-6 lg:px-12 bg-cream">
+    <div class="max-w-6xl mx-auto">
+      <div class="section-title reveal">
+        <div class="divider"></div>
+        <h2>¿Cómo Trabajamos?</h2>
+        <p>Un proceso transparente y profesional para cada servicio que ofrecemos.</p>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-8 mt-12">
+        <div class="text-center reveal reveal-delay-1">
+          <div class="w-16 h-16 bg-coffee text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold" style="font-family: 'Playfair Display', serif;">1</div>
+          <h4 class="font-bold mb-2 text-lg">Consulta</h4>
+          <p class="text-gray-600 text-sm">Conversamos sobre tus necesidades y expectativas.</p>
+        </div>
+        <div class="text-center reveal reveal-delay-2">
+          <div class="w-16 h-16 bg-coffee text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold" style="font-family: 'Playfair Display', serif;">2</div>
+          <h4 class="font-bold mb-2 text-lg">Propuesta</h4>
+          <p class="text-gray-600 text-sm">Diseñamos una propuesta personalizada y a medida.</p>
+        </div>
+        <div class="text-center reveal reveal-delay-3">
+          <div class="w-16 h-16 bg-coffee text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold" style="font-family: 'Playfair Display', serif;">3</div>
+          <h4 class="font-bold mb-2 text-lg">Ejecución</h4>
+          <p class="text-gray-600 text-sm">Llevamos a cabo el servicio con la máxima calidad.</p>
+        </div>
+        <div class="text-center reveal reveal-delay-4">
+          <div class="w-16 h-16 bg-coffee text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold" style="font-family: 'Playfair Display', serif;">4</div>
+          <h4 class="font-bold mb-2 text-lg">Seguimiento</h4>
+          <p class="text-gray-600 text-sm">Nos aseguramos de que todo haya sido perfecto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 px-6 lg:px-12">
+    <div class="max-w-3xl mx-auto">
+      <div class="section-title reveal">
+        <div class="divider"></div>
+        <h2>Preguntas Frecuentes</h2>
+        <p>Resolvemos las dudas más comunes sobre nuestros servicios.</p>
+      </div>
+
+      <div class="space-y-4 mt-12">
+        <details class="reveal bg-white rounded-xl p-6 shadow-sm cursor-pointer">
+          <summary class="font-bold text-lg flex justify-between items-center">¿Cuánto cuesta el servicio de catering? <span>+</span></summary>
+          <p class="text-gray-600 mt-3 leading-relaxed">El costo varía según el número de invitados, ubicación y menú seleccionado. Trabajamos desde eventos pequeños hasta grandes celebraciones. Solicita una cotización personalizada.</p>
+        </details>
+        <details class="reveal bg-white rounded-xl p-6 shadow-sm cursor-pointer">
+          <summary class="font-bold text-lg flex justify-between items-center">¿Las clases de barismo tienen certificación? <span>+</span></summary>
+          <p class="text-gray-600 mt-3 leading-relaxed">Sí, al finalizar el curso completo recibirás un certificado avalado por la Specialty Coffee Association (SCA).</p>
+        </details>
+        <details class="reveal bg-white rounded-xl p-6 shadow-sm cursor-pointer">
+          <summary class="font-bold text-lg flex justify-between items-center">¿Puedo personalizar mi suscripción? <span>+</span></summary>
+          <p class="text-gray-600 mt-3 leading-relaxed">Por supuesto. Puedes elegir el origen, la frecuencia (semanal, quincenal, mensual) y la cantidad de café que mejor se adapte a tu consumo.</p>
+        </details>
+        <details class="reveal bg-white rounded-xl p-6 shadow-sm cursor-pointer">
+          <summary class="font-bold text-lg flex justify-between items-center">¿Hacen entregas fuera de la ciudad? <span>+</span></summary>
+          <p class="text-gray-600 mt-3 leading-relaxed">Sí, realizamos envíos a toda la región. Para destinos más lejanos, consulta disponibilidad y tarifas con nuestro equipo.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-6 lg:px-12 bg-coffee text-white text-center">
+    <div class="max-w-3xl mx-auto reveal">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6" style="font-family: 'Playfair Display', serif;">¿Interesado en algún servicio?</h2>
+      <p class="text-gray-200 mb-8 text-lg">Contáctanos y diseñemos juntos la experiencia perfecta para ti.</p>
+      <a href="contacto.html" class="btn-secondary">Solicitar Información</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white py-16 px-6 lg:px-12">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+          </svg>
+          <span class="text-2xl font-bold" style="font-family: 'Playfair Display', serif;">Café Aroma</span>
+        </div>
+        <p class="text-gray-400 text-sm leading-relaxed">Café de especialidad, pastelería artesanal y momentos inolvidables desde 2015.</p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 uppercase tracking-wider text-sm">Navegación</h4>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li><a href="index.html" class="hover:text-white transition">Inicio</a></li>
+          <li><a href="sobre-nosotros.html" class="hover:text-white transition">Sobre Nosotros</a></li>
+          <li><a href="servicios.html" class="hover:text-white transition">Servicios</a></li>
+          <li><a href="galeria.html" class="hover:text-white transition">Galería</a></li>
+          <li><a href="precios.html" class="hover:text-white transition">Precios</a></li>
+          <li><a href="contacto.html" class="hover:text-white transition">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 uppercase tracking-wider text-sm">Horarios</h4>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li>Lunes - Viernes: 7:00 - 21:00</li>
+          <li>Sábados: 8:00 - 22:00</li>
+          <li>Domingos: 9:00 - 20:00</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 uppercase tracking-wider text-sm">Contacto</h4>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li>Av. Principal 123, Ciudad</li>
+          <li>+1 (555) 123-4567</li>
+          <li>info@cafearoma.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between gap-4 text-sm text-gray-400">
+      <p>&copy; <span class="current-year"></span> Café Aroma. Todos los derechos reservados.</p>
+      <div class="flex gap-6">
+        <a href="privacidad.html" class="hover:text-white transition">Privacidad</a>
+        <a href="terminos.html" class="hover:text-white transition">Términos</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
