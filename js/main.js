@@ -2,6 +2,9 @@
 // CAFÉ AROMA - LÓGICA PRINCIPAL
 // ============================================
 
+// Formatea un precio numérico a pesos chilenos: $1.890 CLP
+const formatCLP = (n) => `$${Math.round(n).toLocaleString('es-CL')} CLP`;
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // ============================================
@@ -108,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="p-6">
           <div class="flex justify-between items-start mb-2 gap-3">
             <h3 class="text-xl font-bold text-gray-900">${p.nombre}</h3>
-            <span class="text-coffee font-bold text-lg whitespace-nowrap">$${p.precio.toFixed(2)}</span>
+            <span class="text-coffee font-bold text-lg whitespace-nowrap">${formatCLP(p.precio)}</span>
           </div>
           <p class="text-gray-600 text-sm">${p.descripcion}</p>
         </div>
@@ -391,7 +394,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <div class="p-6">
                 <div class="flex justify-between items-start mb-2 gap-3">
                   <h3 class="text-xl font-bold text-gray-900">${p.nombre}</h3>
-                  <span class="text-coffee font-bold text-lg whitespace-nowrap">$${p.precio.toFixed(2)}</span>
+                  <span class="text-coffee font-bold text-lg whitespace-nowrap">${formatCLP(p.precio)}</span>
                 </div>
                 <p class="text-gray-600 text-sm">${p.descripcion}</p>
               </div>
